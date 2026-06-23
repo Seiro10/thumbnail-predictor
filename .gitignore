@@ -1,0 +1,42 @@
+# ── Credentials & secrets ─────────────────────────────────────────────────────
+.env
+*.key
+*.pem
+service-account*.json
+gcloud-credentials*.json
+
+# ── Python environment ────────────────────────────────────────────────────────
+pyenv/
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Data — thumbnails and large binaries ─────────────────────────────────────
+data/thumbnails/
+data/efficientnet_embeddings.npy
+data/scraper_log.txt
+
+# ── Trained model artifacts ───────────────────────────────────────────────────
+model/thumbnail_scorer.keras
+model/tabular_scaler.pkl
+model/saved_model/
+
+# ── IDE & system ──────────────────────────────────────────────────────────────
+.claude/
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# ── Jupyter checkpoints ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ── GCS / Cloud Build temp artifacts ─────────────────────────────────────────
+*.tgz
+cloudbuild.yaml.bak

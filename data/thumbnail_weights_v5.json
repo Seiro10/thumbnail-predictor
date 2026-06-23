@@ -1,0 +1,16 @@
+{
+  "text_short": 7.0,
+  "text_medium": 8.5,
+  "text_long": 10.0,
+  "one_person": 4.0,
+  "two_people": 2.0,
+  "expr_neutral": 3.0,
+  "expr_smile": 2.5,
+  "color_cold": 3.0,
+  "color_neutral": 1.5,
+  "model_type": "within_channel_validated_v5",
+  "max_score": 20.0,
+  "corr_raw": 0.019830752330831414,
+  "corr_norm": 0.09213415161232479,
+  "note": "bg_busy and contrast_high excluded: appeared strong in raw analysis but both turned NEGATIVE after within-channel normalization \u2014 they were channel-type confounds, not real thumbnail signals."
+}
