@@ -131,7 +131,7 @@ export default function Home() {
     form.append('channel_avg_perf', String(channel.avgPerf));
     form.append('niche', channel.niche);
     try {
-      const res = await fetch('http://localhost:8000/score', { method: 'POST', body: form });
+      const res = await fetch('http://localhost:7800/score', { method: 'POST', body: form });
       if (!res.ok) { const e = await res.json(); throw new Error(e.detail ?? 'Server error'); }
       setResult(await res.json());
     } catch (e: unknown) {

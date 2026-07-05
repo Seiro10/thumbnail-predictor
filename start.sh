@@ -9,8 +9,8 @@ echo ""
 # Backend
 source "$ROOT/pyenv/bin/activate"
 cd "$ROOT"
-echo "[API]  Starting FastAPI on http://localhost:8000"
-python -m uvicorn api.main:app --host 0.0.0.0 --port 8000 &
+echo "[API]  Starting FastAPI on http://localhost:7800"
+python -m uvicorn api.main:app --host 0.0.0.0 --port 7800 &
 API_PID=$!
 
 # Frontend
@@ -20,8 +20,8 @@ npm run dev &
 FE_PID=$!
 
 echo ""
-echo "  API  → http://localhost:8000/health"
-echo "  App  → http://localhost:3001"
+echo "  API  → http://localhost:7800/health"
+echo "  App  → http://localhost:7801"
 echo ""
 echo "Press Ctrl+C to stop both servers."
 
