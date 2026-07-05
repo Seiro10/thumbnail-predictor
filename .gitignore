@@ -40,3 +40,5 @@ notebooks/.ipynb_checkpoints/
 # ── GCS / Cloud Build temp artifacts ─────────────────────────────────────────
 *.tgz
 cloudbuild.yaml.bak
+frontend/node_modules/
+frontend/.next/
