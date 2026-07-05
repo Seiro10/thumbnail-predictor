@@ -21,7 +21,7 @@ FE_PID=$!
 
 echo ""
 echo "  API  → http://localhost:8000/health"
-echo "  App  → http://localhost:3000"
+echo "  App  → http://localhost:3001"
 echo ""
 echo "Press Ctrl+C to stop both servers."
 
